@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(argv) < 2:
         exit()
     todos = requests.get(
-        "https://jsonplaceholder.typicode.com/todos?userId=1"
+        "https://jsonplaceholder.typicode.com/todos?userId={}"
         .format(argv[1]))
     name = requests.get(
         "https://jsonplaceholder.typicode.com/users?id={}".format(argv[1]))
