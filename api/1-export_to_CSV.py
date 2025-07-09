@@ -25,4 +25,3 @@ if __name__ == "__main__":
         writer = csv.writer(csv_file, delimiter=',', quoting=csv.QUOTE_ALL)
         for todo in todos:
             writer.writerow([argv[1], name, todo['completed'], todo['title']])
-            
